@@ -1,0 +1,17 @@
+title: "Haiyun Guo"
+description: "Professor at UCAS"
+baseurl: ""
+url: "https://haiyunguo.github.io"
+
+theme: minima
+
+author:
+  name: "Haiyun Guo"
+  email: "haiyun.guo@ucas.ac.cn"
+
+# 导航栏
+header_pages:
+  - _pages/about.md
+  - _pages/publications.md
+  - _pages/projects.md
+  - _pages/teaching.md
