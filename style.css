@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: #f6f8fa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 32px 24px;
+    border-radius: 12px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.06);
+}
+
+.position {
+    font-size: 1.15em;
+    color: #555;
+    margin: 8px 0;
+}
+
+.contact {
+    font-size: 1em;
+    color: #666;
+}
+
+.lang-switch {
+    margin-top: 12px;
+}
+
+.lang-switch button {
+    background: #0366d6;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    margin: 0 3px;
+    padding: 4px 14px;
+    font-size: 0.98em;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.2s;
+}
+
+.lang-switch button.selected,
+.lang-switch button:hover {
+    background: #024e9b;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    margin-bottom: 36px;
+}
+
+nav a {
+    color: #0366d6;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #0366d6;
+}
+
+section {
+    margin-bottom: 34px;
+}
+
+h2 {
+    color: #0366d6;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    color: #888;
+    margin-top: 30px;
+    font-size: 0.95em;
+}
