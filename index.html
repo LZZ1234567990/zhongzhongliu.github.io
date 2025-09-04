@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Haiyun Guo | 郭海云 个人主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // 简单的中英文切换
+        function setLang(lang) {
+            document.querySelectorAll('[data-en]').forEach(el => {
+                el.style.display = (lang === 'en') ? '' : 'none';
+            });
+            document.querySelectorAll('[data-zh]').forEach(el => {
+                el.style.display = (lang === 'zh') ? '' : 'none';
+            });
+            document.getElementById('btn-en').classList.toggle('selected', lang === 'en');
+            document.getElementById('btn-zh').classList.toggle('selected', lang === 'zh');
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            setLang('en');
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/avatar.jpg" alt="Avatar" class="avatar">
+            <h1 data-en>Haiyun Guo</h1>
+            <h1 data-zh>郭海云</h1>
+            <p class="position" data-en>Professor | University of Chinese Academy of Sciences</p>
+            <p class="position" data-zh>教授 | 中国科学院大学</p>
+            <div class="contact" data-en>
+                <span>Email: haiyun.guo@ucas.edu.cn</span>
+            </div>
+            <div class="contact" data-zh>
+                <span>邮箱：haiyun.guo@ucas.edu.cn</span>
+            </div>
+            <div class="lang-switch">
+                <button id="btn-en" onclick="setLang('en')">EN</button>
+                <button id="btn-zh" onclick="setLang('zh')">中文</button>
+            </div>
+        </header>
+        <nav>
+            <a href="#bio" data-en>Biography</a>
+            <a href="#bio" data-zh>简介</a>
+            <a href="#education" data-en>Education</a>
+            <a href="#education" data-zh>教育背景</a>
+            <a href="#experience" data-en>Experience</a>
+            <a href="#experience" data-zh>工作经历</a>
+            <a href="#research" data-en>Research</a>
+            <a href="#research" data-zh>研究方向</a>
+            <a href="#publications" data-en>Publications</a>
+            <a href="#publications" data-zh>代表性论文</a>
+        </nav>
+        <section id="bio">
+            <h2 data-en>Biography</h2>
+            <h2 data-zh>简介</h2>
+            <p data-en>
+                Haiyun Guo is a Professor at the University of Chinese Academy of Sciences. His research interests include ... <!-- 可补充详细内容 -->
+            </p>
+            <p data-zh>
+                郭海云，中国科学院大学教授。主要研究方向包括... <!-- 可补充详细内容 -->
+            </p>
+        </section>
+        <section id="education">
+            <h2 data-en>Education</h2>
+            <h2 data-zh>教育背景</h2>
+            <ul data-en>
+                <li>Ph.D., Computer Science, University of Chinese Academy of Sciences, 2012</li>
+                <li>B.S., Computer Science, Tsinghua University, 2007</li>
+            </ul>
+            <ul data-zh>
+                <li>博士，计算机科学，中国科学院大学，2012年</li>
+                <li>学士，计算机科学，清华大学，2007年</li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h2 data-en>Experience</h2>
+            <h2 data-zh>工作经历</h2>
+            <ul data-en>
+                <li>Professor, UCAS, 2019–present</li>
+                <li>Associate Professor, UCAS, 2015–2019</li>
+            </ul>
+            <ul data-zh>
+                <li>教授，中国科学院大学，2019年至今</li>
+                <li>副教授，中国科学院大学，2015–2019</li>
+            </ul>
+        </section>
+        <section id="research">
+            <h2 data-en>Research</h2>
+            <h2 data-zh>研究方向</h2>
+            <p data-en>Machine Learning, Data Mining, Artificial Intelligence, etc.</p>
+            <p data-zh>机器学习、数据挖掘、人工智能等。</p>
+        </section>
+        <section id="publications">
+            <h2 data-en>Selected Publications</h2>
+            <h2 data-zh>代表性论文</h2>
+            <ol data-en>
+                <li>Guo, H., et al. "Title of Paper 1." Journal Name, Year.</li>
+                <li>Guo, H., et al. "Title of Paper 2." Journal Name, Year.</li>
+            </ol>
+            <ol data-zh>
+                <li>郭海云 等，“论文题目1”，期刊名，年份。</li>
+                <li>郭海云 等，“论文题目2”，期刊名，年份。</li>
+            </ol>
+        </section>
+        <footer>
+            <p data-en>&copy; 2025 Haiyun Guo</p>
+            <p data-zh>&copy; 2025 郭海云</p>
+        </footer>
+    </div>
+</body>
+</html>
