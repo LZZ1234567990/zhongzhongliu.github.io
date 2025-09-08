@@ -1,118 +1,164 @@
 body {
-    background: #f7f7f7; /* 第三张图片的底色 */
+    background: #fff;
     color: #333;
     margin: 0;
     font-family: 'Segoe UI', 'Arial', sans-serif;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-.main-flex {
+.header {
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 0 32px;
+    height: 62px;
     display: flex;
-    gap: 40px;
-    margin-top: 38px;
-    margin-bottom: 40px;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.profile-card,
-.profile-main {
-    background: #f7f7f7;   /* 内容区底色与body一致 */
-    box-shadow: none;      /* 去除阴影效果 */
-    border-radius: 0;      /* 去除圆角 */
-    padding: 32px 24px;    /* 恢复内容区内边距 */
-    margin-bottom: 40px;   /* 保持区块间距 */
+.header .site-title {
+    font-weight: 700;
+    font-size: 1.25em;
+    margin-right: 34px;
+    color: #222;
 }
 
-.avatar {
-    width: 120px;
-    height: 120px;
+.header .nav {
+    display: flex;
+    gap: 32px;
+}
+
+.header .nav a {
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.08em;
+    transition: color 0.18s;
+}
+
+.header .nav a:hover {
+    color: #0366d6;
+}
+
+.container {
+    display: flex;
+    max-width: 1100px;
+    margin: 38px auto 0 auto;
+    padding: 0 24px;
+    gap: 44px;
+}
+
+.profile-card {
+    background: #fff;
+    width: 260px;
+    padding: 0;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+}
+
+.profile-card .avatar {
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 16px;
-    border: 2px solid #eee;
+    border: 6px solid #fff;
+    margin-bottom: 18px;
+    box-sizing: border-box;
 }
 
-.profile-card h2 {
-    margin-bottom: 9px;
+.profile-card .name {
+    font-weight: 700;
     font-size: 1.22em;
+    margin-bottom: 8px;
     color: #444;
 }
 
-.profile-card p {
-    margin-bottom: 18px;
+.profile-card .title {
     color: #888;
     font-size: 1em;
+    margin-bottom: 13px;
 }
 
-.profile-list {
+.profile-card .profile-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 1em;
+    text-align: left;
+    font-size: 0.98em;
     color: #555;
 }
 
-.profile-list li {
-    margin-bottom: 12px;
+.profile-card .profile-list li {
+    margin-bottom: 13px;
     display: flex;
     align-items: center;
-    gap: 5px;
-    justify-content: center;
+    gap: 7px;
+    justify-content: flex-start;
 }
 
-.profile-list .icon {
-    font-size: 1.13em;
+.profile-card .profile-list .icon {
+    font-size: 1.15em;
+    color: #bbb;
+    width: 18px;
 }
 
-.profile-list a {
-    color: #0366d6;
+.profile-card .profile-list a {
+    color: #555;
     text-decoration: none;
     transition: color 0.18s;
 }
 
-.profile-list a:hover {
+.profile-card .profile-list a:hover {
     color: #024e9b;
 }
 
-.profile-main h1, .profile-main h2 {
+.main-content {
+    flex: 1;
+    background: #fff;
+    padding: 0;
+}
+
+.main-content h1, .main-content h2 {
     color: #222;
-    margin-top: 0;
-    margin-bottom: 14px;
     font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 18px;
 }
 
-.profile-main h1 {
-    font-size: 1.6em;
+.main-content h1 {
+    font-size: 2em;
 }
 
-.profile-main h2 {
-    font-size: 1.22em;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 3px;
+.main-content h2 {
+    font-size: 1.25em;
 }
 
-.profile-main section {
-    margin-bottom: 32px;
-}
-
-.profile-main ul {
+.main-content ul {
     padding-left: 18px;
     margin-top: 0;
 }
 
-.profile-main li {
-    margin-bottom: 8px;
+.main-content li {
+    margin-bottom: 12px;
+    font-size: 1.06em;
+}
+
+a {
+    color: #2090d7;
+    text-decoration: none;
+    transition: color 0.18s;
+}
+
+a:hover {
+    color: #0366d6;
 }
 
 .footer {
     background: #fff;
     color: #999;
     text-align: center;
-    padding: 22px 0 18px 0;
+    padding: 20px 0 16px 0;
     font-size: 1em;
     border-top: 1px solid #eee;
+    margin-top: 32px;
 }
