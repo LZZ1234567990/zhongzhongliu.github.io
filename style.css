@@ -5,9 +5,114 @@ body {
     font-family: 'Segoe UI', 'Arial', sans-serif;
 }
 
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.main-flex {
+    display: flex;
+    gap: 40px;
+    margin-top: 38px;
+    margin-bottom: 40px;
+}
+
 .profile-card,
 .profile-main {
     background: #f7f7f7;   /* 内容区底色与body一致 */
     box-shadow: none;      /* 去除阴影效果 */
     border-radius: 0;      /* 去除圆角 */
+    padding: 32px 24px;    /* 恢复内容区内边距 */
+    margin-bottom: 40px;   /* 保持区块间距 */
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 2px solid #eee;
+}
+
+.profile-card h2 {
+    margin-bottom: 9px;
+    font-size: 1.22em;
+    color: #444;
+}
+
+.profile-card p {
+    margin-bottom: 18px;
+    color: #888;
+    font-size: 1em;
+}
+
+.profile-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.profile-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.profile-list .icon {
+    font-size: 1.13em;
+}
+
+.profile-list a {
+    color: #0366d6;
+    text-decoration: none;
+    transition: color 0.18s;
+}
+
+.profile-list a:hover {
+    color: #024e9b;
+}
+
+.profile-main h1, .profile-main h2 {
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-weight: 700;
+}
+
+.profile-main h1 {
+    font-size: 1.6em;
+}
+
+.profile-main h2 {
+    font-size: 1.22em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3px;
+}
+
+.profile-main section {
+    margin-bottom: 32px;
+}
+
+.profile-main ul {
+    padding-left: 18px;
+    margin-top: 0;
+}
+
+.profile-main li {
+    margin-bottom: 8px;
+}
+
+.footer {
+    background: #fff;
+    color: #999;
+    text-align: center;
+    padding: 22px 0 18px 0;
+    font-size: 1em;
+    border-top: 1px solid #eee;
 }
