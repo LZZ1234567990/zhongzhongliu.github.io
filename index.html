@@ -7,7 +7,6 @@
   <style>
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:24px;background:#f7f7fb;color:#111}
     .container{max-width:900px;margin:0 auto;background:#fff;padding:24px;border-radius:8px;box-shadow:0 6px 24px rgba(16,24,40,.08)}
-    pre{white-space:pre-wrap;word-wrap:break-word;background:#0b1220;color:#e6f2ff;padding:16px;border-radius:6px;overflow:auto}
     h1{margin-top:0}
     .profile{margin:16px 0;padding:12px;background:#f1f5f9;border-radius:6px}
     .profile p{margin:4px 0}
@@ -16,46 +15,13 @@
 <body>
   <div class="container">
     <h1>Filtered Conversations</h1>
+
     <div class="profile">
       <p>姓名：刘忠忠</p>
       <p>性别：男</p>
     </div>
+
     <p>已删除包含纯数字用户内容的会话条目，保留其余会话。</p>
-    <pre id="json">
-[
-  [
-    {"role": "user", "content": "可以的宝"},
-    {"role": "assistant", "content": "代付回调快吗<|im_end|>"},
-    {"role": "user", "content": "代付回调快吗"},
-    {"role": "assistant", "content": "30分钟左右宝子<|im_end|>"}
-  ],
-  [
-    {"role": "user", "content": "is it success or refund ?"},
-    {"role": "assistant", "content": "The bank has not responded yet<|im_end|>"},
-    {"role": "user", "content": "The bank has not responded yet"},
-    {"role": "assistant", "content": "on checking ?<|im_end|>"}
-  ],
-  [
-    {"role": "user", "content": "代收代付现在怎么样   "},
-    {"role": "assistant", "content": "目前正常的老板<|im_end|>"},
-    {"role": "user", "content": "目前正常的老板"},
-    {"role": "assistant", "content": "代付回调快吗<|im_end|>"},
-    {"role": "user", "content": "代付回调快吗"},
-    {"role": "assistant", "content": "半小时回调<|im_end|>"}
-  ],
-  [
-    {"role": "user", "content": " is this your payment account?"},
-    {"role": "assistant", "content": "not received<|im_end|>"},
-    {"role": "user", "content": "not received"},
-    {"role": "assistant", "content": "is this yours?<|im_end|>"},
-    {"role": "user", "content": "is this yours?"},
-    {"role": "assistant", "content": "wait<|im_end|>"}
-  ]
-]    
-    </pre>
-    <p>原始 JSON 文件（raw）路径：
-      <a id="raw" href="#">（提交后显示）</a>
-    </p>
   </div>
 </body>
 </html>
