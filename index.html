@@ -1,86 +1,55 @@
-<!DOCTYPE html>
-<html lang="zh">
+<!doctype html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>郭海云 | Haiyun Guo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Filtered Conversations</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:24px;background:#f7f7fb;color:#111}
+    .container{max-width:900px;margin:0 auto;background:#fff;padding:24px;border-radius:8px;box-shadow:0 6px 24px rgba(16,24,40,.08)}
+    pre{white-space:pre-wrap;word-wrap:break-word;background:#0b1220;color:#e6f2ff;padding:16px;border-radius:6px;overflow:auto}
+    h1{margin-top:0}
+  </style>
 </head>
 <body>
-    <header class="topbar">
-        <div class="nav-flex">
-            <div class="site-title">郭海云 Haiyun Guo</div>
-            <nav>
-                <a href="#research">研究方向</a>
-                <a href="#publications">论文成果</a>
-                <a href="#teaching">教学</a>
-                <a href="#cv">简历</a>
-            </nav>
-        </div>
-    </header>
-    <div class="main-flex">
-        <aside class="profile-card">
-            <img src="assets/avatar.jpg" alt="Avatar" class="avatar">
-            <h2>郭海云</h2>
-            <p>中国科学院大学 教授<br>计算机科学与技术系</p>
-            <ul class="profile-list">
-                <li>
-                    <span class="icon">📍</span>
-                    北京，中国
-                </li>
-                <li>
-                    <span class="icon">🐦</span>
-                    <a href="#">Twitter</a>
-                </li>
-                <li>
-                    <span class="icon">🐙</span>
-                    <a href="https://github.com/LZZ1234567990" target="_blank">Github</a>
-                </li>
-                <li>
-                    <span class="icon">📚</span>
-                    <a href="#">Google Scholar</a>
-                </li>
-            </ul>
-        </aside>
-        <main class="profile-main">
-            <h1>Talks and presentations</h1>
-            <ul>
-                <li>
-                    Computational Linguistics for Brain Encoding and Decoding: Principles, Practices and Beyond. 
-                    <a href="#">ACL 2024 Tutorial</a> with <a href="#">Slides-50min</a>. Aug 11, 2024.
-                </li>
-                <li>
-                    Deep Learning for Brain Encoding and Decoding: Principles, Practices and Beyond. 
-                    <a href="#">IJCAI 2024 Tutorial</a> with <a href="#">Slides-90min</a>. Aug 3, 2024.
-                </li>
-                <li>
-                    How Do Transformers Integrate Meanings? An Investigation Using Interpretable Brain-Based Componential Semantics in Two-Word Phrases. 
-                    <a href="#">HBAI-IJCAI 2024 workshop</a>. Aug 3, 2024.
-                </li>
-                <li>
-                    Word Representation and Combinatorial Processing in Language Understanding for Machines and Humans. 
-                    <a href="#">cityUHK LT Research Forum Series</a>. May 6, 2024.
-                </li>
-                <li>
-                    Toward a comprehensive study of human and machine language understanding. 
-                    <a href="#">AIBED: Artificial intelligence for brain encoding and decoding</a>. Mar 24, 2024.
-                </li>
-                <li>
-                    Neural encoding and decoding with textual representations. 
-                    <a href="#">Neuroimaging Methods Workshop</a> with <a href="#">code</a>. December 10, 2022.
-                </li>
-                <li>
-                    Combining cutting-edge artificial intelligence and neuroscience research, language learning, and ancient poetry appreciation. 
-                    ISLSEAI-2022. October 29, 2022.
-                </li>
-                <li>
-                    Human and Machine language understanding. YSSNLP-2022. May 28, 2022.
-                </li>
-                <li>
-                    Human and Machine language understanding. CCL-2021. October 22, 2021.
-                </li>
-            </ul>
-        </main>
-    </div>
+  <div class="container">
+    <h1>Filtered Conversations</h1>
+    <p>已删除包含纯数字用户内容的会话条目，保留其余会话。</p>
+    <pre id="json">
+[
+  [
+    {"role": "user", "content": "可以的宝"},
+    {"role": "assistant", "content": "代付回调快吗<|im_end|>"},
+    {"role": "user", "content": "代付回调快吗"},
+    {"role": "assistant", "content": "30分钟左右宝子<|im_end|>"}
+  ],
+  [
+    {"role": "user", "content": "is it success or refund ?"},
+    {"role": "assistant", "content": "The bank has not responded yet<|im_end|>"},
+    {"role": "user", "content": "The bank has not responded yet"},
+    {"role": "assistant", "content": "on checking ?<|im_end|>"}
+  ],
+  [
+    {"role": "user", "content": "代收代付现在怎么样   "},
+    {"role": "assistant", "content": "目前正常的老板<|im_end|>"},
+    {"role": "user", "content": "目前正常的老板"},
+    {"role": "assistant", "content": "代付回调快吗<|im_end|>"},
+    {"role": "user", "content": "代付回调快吗"},
+    {"role": "assistant", "content": "半小时回调<|im_end|>"}
+  ],
+  [
+    {"role": "user", "content": " is this your payment account?"},
+    {"role": "assistant", "content": "not received<|im_end|>"},
+    {"role": "user", "content": "not received"},
+    {"role": "assistant", "content": "is this yours?<|im_end|>"},
+    {"role": "user", "content": "is this yours?"},
+    {"role": "assistant", "content": "wait<|im_end|>"}
+  ]
+]
+    </pre>
+    <p>原始 JSON 文件（raw）路径：
+      <a id="raw" href="#">（提交后显示）</a>
+    </p>
+  </div>
 </body>
 </html>
